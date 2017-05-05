@@ -1,6 +1,7 @@
-# Discard
+# Angular Tour of Heroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
+This project is a worked-through version of the [Angular Tutorial](https://angular.io/docs/ts/latest/tutorial/)
+and was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
 ## Development server
 
