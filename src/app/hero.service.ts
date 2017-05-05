@@ -1,4 +1,4 @@
-import { Injectable }    from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
@@ -25,7 +25,7 @@ export class HeroService {
         return this.http.get(url)
             .toPromise()
             .then(response => response.json().data as Hero)
-            .catch(this.handleError)
+            .catch(this.handleError);
     }
 
     update(hero: Hero): Promise<Hero> {
@@ -52,7 +52,7 @@ export class HeroService {
             .then(() => null)
             .catch(this.handleError);
     }
-    
+
     private handleError(error: any): Promise<any> {
         console.error('An error ocurred:', error); // for demo purposes only
         return Promise.reject(error.message || error);

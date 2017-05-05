@@ -1,6 +1,7 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
+      /* tslint:disable:prefer-const */
     let heroes = [
       {id: 11, name: 'Mr. Nice'},
       {id: 12, name: 'Narco'},
@@ -13,6 +14,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {id: 19, name: 'Magma'},
       {id: 20, name: 'Tornado'}
     ];
+    /* tslint:enable:prefer-const */
     return {heroes};
   }
 }
